@@ -4,8 +4,10 @@
         <inSequence>
         <call>
             <endpoint key="todos-server" />
-        
         </call>
+        <log level="custom">
+            <property name="response" expression="testing..."/>
+        </log>
         <respond />
         </inSequence>
         <faultSequence />
