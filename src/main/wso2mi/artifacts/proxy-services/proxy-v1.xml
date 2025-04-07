@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy name="proxy-v1" startOnLoad="true" transports="http https" xmlns="http://ws.apache.org/ns/synapse">
+    <target>
+        <inSequence>
+        <call>
+            <endpoint key="todos-server" />
+        
+        </call>
+        <respond />
+        </inSequence>
+        <faultSequence />
+    </target>
+</proxy>
